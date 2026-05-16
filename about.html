@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me</title>
+
+<style>
+
+/* BODY */
+body{
+    margin:0;
+    padding:40px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#012b2b,#016666);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+/* ABOUT ME */
+.experience-section{
+    width:90%;
+    max-width:1100px;
+    padding:50px;
+    border-radius:30px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* TITLE */
+.experience-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.experience-title h2{
+    font-size:60px;
+    margin:0;
+    font-family:cursive;
+}
+
+.experience-title p{
+    margin-top:10px;
+    color:#dcdcdc;
+}
+
+/* CONTAINER */
+.experience-container{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* LEFT CARD */
+.profile-card{
+    width:320px;
+    background: rgba(255,255,255,0.08);
+    padding:15px;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.profile-card img{
+    width:100%;
+    border-radius:20px;
+}
+
+.profile-info{
+    margin-top:15px;
+    padding:15px;
+    border-radius:15px;
+    background: rgba(255,255,255,0.05);
+}
+
+.profile-info h3{
+    margin:0;
+    font-size:28px;
+}
+
+.profile-info p{
+    margin-top:8px;
+    font-size:14px;
+    color:#ddd;
+}
+
+/* RIGHT CARD */
+.experience-text{
+    width:500px;
+    padding:30px;
+    border-radius:25px;
+    background: rgba(255,255,255,0.08);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    line-height:1.9;
+}
+
+.experience-text p{
+    margin-bottom:20px;
+    color:#f1f1f1;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    body{
+        padding:20px;
+    }
+
+    .experience-section{
+        padding:30px;
+    }
+
+    .experience-title h2{
+        font-size:45px;
+    }
+
+    .experience-container{
+        flex-direction:column;
+    }
+
+    .experience-text{
+        width:100%;
+    }
+
+    .profile-card{
+        width:100%;
+        max-width:350px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ABOUT ME -->
+<section class="experience-section">
+
+    <div class="experience-title">
+        <h2>About Me</h2>
+        <p>My journey in learning programming and web development.</p>
+    </div>
+
+    <div class="experience-container">
+
+        <!-- LEFT -->
+        <div class="profile-card">
+
+            <img src="k1.png" alt="Nadiya">
+
+            <div class="profile-info">
+                <h3>Nadiya Dwi Wijaya</h3>
+                <p>"Every line of code is a step toward my future."</p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="experience-text">
+
+            <p>
+                Hello, my name is <b>Nadiya Dwi Wijaya</b>. I am a 10th-grade student majoring in
+                <b>Software Engineering (RPL)</b> at <b>SMKN Tengaran</b>.
+                I have a strong interest in technology, especially in website design and development.
+            </p>
+
+            <p>
+                I enjoy learning new things about coding, UI/UX design, and how to create websites
+                that are attractive, modern, and easy to use.
+            </p>
+
+            <p>
+                I chose the Software Engineering major because I want to understand the world of
+                programming more deeply and develop my skills in information technology.
+            </p>
+
+            <p>
+                For me, technology is not only about writing code, but also about creating useful
+                and creative solutions. During my studies in RPL, I started learning various
+                programming languages, interface design, and the process of building websites
+                from scratch until they can be used properly.
+            </p>
+
+            <p>
+                I am a detail-oriented, responsible person, and I can work well in a team.
+                I also enjoy exploring new ideas to improve my creativity and abilities in
+                creating digital projects.
+            </p>
+
+            <p>
+                In the future, I hope to continue developing my skills in web development
+                and design so I can create more innovative and professional works.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

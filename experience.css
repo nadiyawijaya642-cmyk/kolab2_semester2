@@ -1,0 +1,97 @@
+body{
+  background: linear-gradient(135deg,#052d2d,#0b4444,#0f5b5b);
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.title-font{
+  font-family: 'Julee', cursive;
+}
+
+.glass{
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.photo-box{
+  position: relative;
+  overflow: hidden;
+  border-radius: 35px;
+  transition: 0.5s;
+}
+
+.photo-box:hover{
+  transform: scale(1.03);
+}
+
+.photo-box::before{
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  top: -120px;
+  right: -120px;
+  filter: blur(20px);
+}
+
+.photo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fade-up{
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.fade-up.show{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease;
+}
+
+.floating{
+  animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating{
+
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-10px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+
+}
+
+.glow{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #00ffcc;
+  filter: blur(140px);
+  opacity: 0.15;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.glow1{
+  top: 0;
+  left: 0;
+}
+
+.glow2{
+  bottom: 0;
+  right: 0;
+}
